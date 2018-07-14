@@ -1,0 +1,103 @@
+Character:
+  Name: M'Chee-daro
+  Class: Rogue (Arcane Trickster)
+  Race: Tabaxi
+  Level: 1
+  Alignment: Chaotic Neutral
+  Experience Points: 0
+  Languages:
+    - Common
+    - Thieves' Cant
+    - Elvish
+  HitPoints: 10
+  HitDice: d8
+Body:
+  Size: Medium
+  Age: 15
+  Speed: 30
+  ClimbingSpeed: 20
+  Sex: Male
+  Height: 6'4
+  Weight: 70kg
+Traits:
+  - Darkvision
+  - Feline Agility
+  - Cat's claws
+  - Cat's talent
+Bonuses:
+  Level:
+    Proficiency: +2
+  Racial: 
+    DEX: +2
+    CHA: +1
+Proficiencies:
+  Racial:
+    - Perception
+    - Stealth
+  Class:
+    Amour:
+      - Light
+    Weapons:
+      - Simple
+      - Hand crossbows
+      - Longswords
+      - Rapiers
+      - Shortswords
+    Tools:
+      - Thieves' Tools
+    Skills:
+      - Sleight of hand
+      - Stealth
+      - Investigation
+      - Deception
+    Expertise:
+      - Sleight of hand
+      - Thieves' Tools
+RawStats:
+  STR: 13
+  DEX: 17
+  CON: 14
+  INT: 16
+  WIS: 12
+  CHA: 15
+SavingThrows:
+  Class:
+    - DEX
+    - INT
+Equipment:
+  - Rapier
+  - Shortbow
+  - Arrow x 20
+  - Leather armour
+  - Dagger x 2
+  - Thieves' Tools
+  - Burglar's pack
+Attacks:
+  - Sneak attack
+    Bonus: 1d6
+    Limitation: 
+      - Once per turn. 
+      - Finesse or ranged. 
+      - Advantage on attack roll or another enemy within 5 ft of target
+  - Cat's claws
+    Bonus: Slashing 1d6 + STR Modifier
+    Limitation: 
+      - Unarmed
+BackStory:
+  From a middle-class background, M'Chee-daro fell in with a bad crowd, and at the age of 8 started stealing for amusement.
+  One fateful night, he snuck into a house, seeking something interesting to take. He found a <something magic>, and activated it.
+  Unfortunately, the owner of the house was an elven wizard, and the <item> was protected by an alarm spell.
+  The wizard returned home, confronting our cat.
+  The wizard realized quickly that the cat had activated the artefact, suggesting latent magical (as well as present larcenous) talent.
+  They formed a pact. The wizard would train the cat in magical arts, and pay a stipend for his upkeep, for which M'Chee-daro would 'acquire' other artefacts as directed by the wizard.
+  Over the years M'Chee-daro has come to love the wizard as a second father.
+  M'Chee-daro has been requested to join the journey to the continent, ostensibly as an adventurer, but also in search of a magical item, long since lost, that was referenced in an old tome.
+PersonalityTraits:
+  - Boredom is the worst thing there is. Sitting alone, with nothing but your own thoughts. No way!
+Ideals:
+  - Acquisition of knowledge or tools
+Bonds:
+  - Love for the wizard
+Flaws:
+  - Strong tendency towards chaos muppetry when bored
+  - Will take petty revenge for perceived slights.
