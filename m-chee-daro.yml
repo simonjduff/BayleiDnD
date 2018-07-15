@@ -44,39 +44,44 @@ Proficiencies:
   Bonus:
     - Reason: Rogue Level 1
       Value: +2
-  Amour:
-    - Name: Light
-      Reason: Class
-  Weapons:
-    - Name: Simple
-      Reason: Class
-    - Name: Hand crossbows
-      Reason: Class
-    - Name: Longswords
-      Reason: Class
-    - Name: Rapiers
-      Reason: Class
-    - Name: Shortswords
-      Reason: Class
-  Tools:
-    - Name: Thieves' Tools (Expert)
-      Reason: Class
-  Skills:
-    - Name: Sleight of hand (Expert)
-      Reason: Class
-    - Name: Stealth
-      Reason: Race, Class
-    - Name: Investigation
-      Reason: Class
-    - Name: Deception
-      Reason: Class
-    - Name: Perception
-      Reason: Race
   SavingThrows:
     - Name: DEX
       Reason: Class
     - Name: INT
       Reason: Class
+  Other:
+    - Name: Amour
+      Items:
+        - Name: Light
+          Reason: Class
+    - Name: Weapons
+      Items:
+        - Name: Simple
+          Reason: Class
+        - Name: Hand crossbows
+          Reason: Class
+        - Name: Longswords
+          Reason: Class
+        - Name: Rapiers
+          Reason: Class
+        - Name: Shortswords
+          Reason: Class
+    - Name: Tools
+      Items:
+        - Name: Thieves' Tools (Expert)
+          Reason: Class
+    - Name: Skills
+      Items:
+        - Name: Sleight of hand (Expert)
+          Reason: Class
+        - Name: Stealth
+          Reason: Race, Class
+        - Name: Investigation
+          Reason: Class
+        - Name: Deception
+          Reason: Class
+        - Name: Perception
+          Reason: Race
 RawStats:
   - Name: STR
     Value: 13

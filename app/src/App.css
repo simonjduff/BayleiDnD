@@ -105,3 +105,11 @@
   width:2em;
   float:left;
 }
+
+.proficiencyType{
+  font-weight:bold;
+}
+
+.proficiencyName{
+  padding-left:1em;
+}

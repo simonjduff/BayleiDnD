@@ -20,6 +20,15 @@ export default class Proficiency extends React.Component{
                 </div>
             );
 
+        const other = this.props.Proficiency.Other.map(p => 
+            <div key="{p.Name}">
+                <div className="proficiencyType">{p.Name}</div>
+                {p.Items.map(i => 
+                    <div className='proficiencyName' key="{i.Name}">{i.Name}</div>
+                )}
+            </div>
+        );
+
         return(
             <div className="proficiencybonus-container">
                 <div className="dndbox">
@@ -30,78 +39,7 @@ export default class Proficiency extends React.Component{
                     {selectedStats}
                 </div>
                 <div className="proficiency-skills dndbox">
-                    <div>
-                        <div className="proficiency-value">&nbsp;</div>
-                        <span className="proficiency-label">Acrobatics STR</span>
-                    </div>
-                    <div>
-                        <div className="proficiency-value">&nbsp;</div>
-                        <span className="proficiency-label">Animal Handling WIS</span>
-                    </div>
-                    <div>
-                        <div className="proficiency-value">&nbsp;</div>
-                        <span className="proficiency-label">Arcana Int</span>
-                    </div>
-                    <div>
-                        <div className="proficiency-value">&nbsp;</div>
-                        <span className="proficiency-label">Athletics STR</span>
-                    </div>
-                    <div>
-                        <div className="proficiency-value">&#x2713;</div>
-                        <span className="proficiency-label">Deception CHA</span>
-                    </div>
-                    <div>
-                        <div className="proficiency-value">&nbsp;</div>
-                        <span className="proficiency-label">History INT</span>
-                    </div>
-                    <div>
-                        <div className="proficiency-value">&nbsp;</div>
-                        <span className="proficiency-label">Insight WIS</span>
-                    </div>
-                    <div>
-                        <div className="proficiency-value">&nbsp;</div>
-                        <span className="proficiency-label">Intimidation CHA</span>
-                    </div>
-                    <div>
-                        <div className="proficiency-value">&#x2713;</div>
-                        <span className="proficiency-label">Investigation INT</span>
-                    </div>
-                    <div>
-                        <div className="proficiency-value">&nbsp;</div>
-                        <span className="proficiency-label">Medicine WIS</span>
-                    </div>
-                    <div>
-                        <div className="proficiency-value">&nbsp;</div>
-                        <span className="proficiency-label">Nature INT</span>
-                    </div>
-                    <div>
-                        <div className="proficiency-value">&#x2713;</div>
-                        <span className="proficiency-label">Perception WIS</span>
-                    </div>
-                    <div>
-                        <div className="proficiency-value">&nbsp;</div>
-                        <span className="proficiency-label">Performance CHA</span>
-                    </div>
-                    <div>
-                        <div className="proficiency-value">&nbsp;</div>
-                        <span className="proficiency-label">Persuasion CHA</span>
-                    </div>
-                    <div>
-                        <div className="proficiency-value">&nbsp;</div>
-                        <span className="proficiency-label">Religion INT</span>
-                    </div>
-                    <div>
-                        <div className="proficiency-value">&#x2713;</div>
-                        <span className="proficiency-label">Sleight of Hand DEX</span>
-                    </div>
-                    <div>
-                        <div className="proficiency-value">&#x2713;</div>
-                        <span className="proficiency-label">Stealth DEX</span>
-                    </div>
-                    <div>
-                        <div className="proficiency-value">&nbsp;</div>
-                        <span className="proficiency-label">Survival WIS</span>
-                    </div>
+                   {other}
                 </div>
             </div>
         );
