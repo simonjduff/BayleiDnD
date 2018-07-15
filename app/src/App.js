@@ -5,21 +5,12 @@ import Character from './components/character';
 import Stats from './components/stats';
 import Inspiration from './components/inspiration';
 import Proficiency from './components/proficiency';
-import char from './m-chee-daro.json';
+import data from './m-chee-daro.json';
 
 class App extends Component {
-  componentDidMount(){
-    // return fetch('m-chee-daro.json')
-    //   .then(d => {
-    //     console.log(`Data ${JSON.stringify(d)}`);
-    //     return d;
-    //   })
-    //   .then(response => response.json())
-    //   .then((json) => {
-    //     this.setState({character: json});
-    //   })
-    //   .catch(e => console.log(e));
-    console.log(JSON.stringify(char));
+  constructor(props){
+    super(props);
+    this.state = {character:data};
   }
 
   render() {
@@ -33,9 +24,9 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <div className="container">
-          <Character />
+          <Character Character={this.state.character.Character} />
           <div className="column column-left">
-            <Stats />
+            <Stats Stats={this.state.character.RawStats} />
           </div>
           <div className="column">
             <Inspiration />

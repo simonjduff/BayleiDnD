@@ -2,32 +2,16 @@ import React from 'react';
 
 export default class Stats extends React.Component{
     render(){
+        const statContainers = this.props.Stats.map((stat, index) => 
+            <div className="stat-container" key={stat.Name}>
+                <div className="stat-value">{stat.Value}</div>
+                <div className="stat-label">{stat.Name}</div>
+            </div>
+        );
+
         return (
             <div className="dndbox stats-container">
-                <div className="stat-container">
-                    <div className="stat-value">13</div>
-                    <div className="stat-label">STR</div>
-                </div>
-                <div className="stat-container">
-                    <div className="stat-value">17</div>
-                    <div className="stat-label">DEX</div>
-                </div>
-                <div className="stat-container">
-                    <div className="stat-value">14</div>
-                    <div className="stat-label">CON</div>
-                </div>
-                <div className="stat-container">
-                    <div className="stat-value">16</div>
-                    <div className="stat-label">INT</div>
-                </div>
-                <div className="stat-container">
-                    <div className="stat-value">12</div>
-                    <div className="stat-label">WIS</div>
-                </div>
-                <div className="stat-container">
-                    <div className="stat-value">15</div>
-                    <div className="stat-label">CHA</div>
-                </div>
+                {statContainers}
             </div>
         );
     }
