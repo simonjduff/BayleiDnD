@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import Character from './components/character';
 import Stats from './components/stats';
+import Inspiration from './components/inspiration';
+import ProficiencyBonus from './components/proficiencybonus';
 
 class App extends Component {
   render() {
@@ -17,7 +19,13 @@ class App extends Component {
         </p>
         <div className="container">
           <Character />
-          <Stats />
+          <div className="column column-left">
+            <Stats />
+          </div>
+          <div className="column">
+            <Inspiration />
+            <ProficiencyBonus />
+          </div>
         </div>
       </div>
     );

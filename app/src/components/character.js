@@ -4,11 +4,11 @@ export default class Character extends React.Component{
     render(){
         return (
             <div>
-                <div className='character-name dndbox'>
+                <div className='character-name dndbox column'>
                     <div className='character-value'>M'Chee-daro</div>
                     <div className='character-label'>Character</div>
                 </div>
-                <div className='character-box dndbox'>
+                <div className='character-box dndbox column'>
                     <div>
                         <div className='character-class character-container'>
                             <div className='character-value'>Rogue</div>

@@ -30,7 +30,6 @@
 .dndbox{
   border:solid 1px black;
   position:relative;
-  float:left;
 }
 
 .container{
@@ -43,7 +42,7 @@
   height:5em;
 }
 
-.character-label{
+.character-label, .stat-label{
   font-size:0.7em;
   border-top:1px dotted black;
 }
@@ -72,4 +71,25 @@
 .stats-container{
   clear:left;
   width:4em;
+}
+
+.inspiration-value, .proficiencybonus-value{
+  margin-right:1em;
+  font-size:1.2em;
+}
+
+.inspiration-label, .proficiencybonus-label{
+  font-size:0.8em;
+}
+
+.inspiration-container, .proficiencybonus-container{
+  text-align:left;
+}
+
+.column{
+  float:left;
+}
+
+.column-left{
+  clear:left;
 }
