@@ -87,12 +87,13 @@ Attacks:
 BackStory:
   From a middle-class background, M'Chee-daro fell in with a bad crowd, and at the age of 8 started stealing for amusement.
   One fateful night, he snuck into a house, seeking something interesting to take. He discovered a black cube in a dresser drawer, and when he picked it up, swiwling colours manifested on its surfaces.
-  Unfortunately, the owner of the house was an elven wizard, and the cube was protected by an alarm spell.
-  With a flash of light, the wizard teleported into the room, cast Hold Person, and M'Chee-daro was captured.
-  The wizard realized quickly that the cat had activated the cube, suggesting latent magical (as well as obvious larcenous) talent.
-  They formed a pact. The wizard would train the cat in magical arts, and pay a stipend for his upkeep, for which M'Chee-daro would 'acquire' other artefacts as directed by the wizard.
-  Over the years M'Chee-daro has come to love the wizard as a second father.
+  Unfortunately, the owner of the house was Iqueral, a high elven wizard, and the cube was protected by an alarm spell.
+  With a flash of light, Iqueral teleported into the room, cast Hold Person, and M'Chee-daro was captured.
+  Iqueral realized quickly that the cat had activated the cube, suggesting latent magical (as well as obvious larcenous) talent.
+  They formed a pact. Iqueral would train the cat in magical arts, and pay a stipend for his upkeep, for which M'Chee-daro would 'acquire' other artefacts as directed by the wizard.
+  Over the years M'Chee-daro has come to love Iqueral as a second father.
   The wizard discovered an ancient tome, rotting in a backstreet bookshop, that referenced an ancient artefact, lost since the closure of travel to Kinnic.
+  The artefact is the Phlebar's Magic Compass. It functions like Locate Object, without the distance restriction, and with an vague indication of distance from the object. Once the compass seeks and object, it will point to it until a new object is selected. The object can be changed once per long rest.
   M'Chee-daro has been requested to join the journey to the continent, ostensibly as an adventurer, but primarily in search of this artefact.
 Background:
   Name: Criminal
@@ -106,5 +107,5 @@ Feat:
   Bonus: INT + 1
   Skills:
     - Know where North is
-    - Know hors to sunset/sunrise
+    - Know hours to sunset/sunrise
     - Recall things seen/heard in last month
