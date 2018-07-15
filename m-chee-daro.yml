@@ -92,12 +92,21 @@ BackStory:
   They formed a pact. The wizard would train the cat in magical arts, and pay a stipend for his upkeep, for which M'Chee-daro would 'acquire' other artefacts as directed by the wizard.
   Over the years M'Chee-daro has come to love the wizard as a second father.
   M'Chee-daro has been requested to join the journey to the continent, ostensibly as an adventurer, but also in search of a magical item, long since lost, that was referenced in an old tome.
-PersonalityTraits:
-  - Boredom is the worst thing there is. Sitting alone, with nothing but your own thoughts. No way!
-Ideals:
-  - Acquisition of knowledge or tools
-Bonds:
-  - Love for the wizard
-Flaws:
-  - Strong tendency towards chaos muppetry when bored
-  - Will take petty revenge for perceived slights.
+Background:
+  Name: Apprentice
+  PersonalityTrait: Boredom is the worst thing there is. Sitting alone, with nothing but your own thoughts. No way!
+  Ideal: Acquisition of knowledge or tools
+  Bond: Love for the wizard
+  Flaw: Strong tendency towards chaos muppetry when bored
+  Feature: 
+    Name: Use Magic Device
+    Detail: Ignore class, race, and level requirements on magic items
+  Equipment:
+    - Component Pouch
+Feat: 
+  Name: Keen Mind
+  Bonus: INT + 1
+  Skills:
+    - Know where North is
+    - Know hors to sunset/sunrise
+    - Recall things seen/heard in last month
