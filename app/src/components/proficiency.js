@@ -2,10 +2,15 @@ import React from 'react';
 
 export default class Proficiency extends React.Component{
     render(){
+        const proficiencyBonus = this.props
+            .Proficiency
+            .Bonus
+            .map(v => v.Value)
+            .reduce((acc,v) => acc + v);
         return(
             <div className="proficiencybonus-container">
                 <div className="dndbox">
-                    <span className="proficiencybonus-value">0</span>
+                    <span className="proficiencybonus-value">{proficiencyBonus}</span>
                     <span className="proficiencybonus-label">Proficiency Bonus</span>
                 </div>
                 <div className="proficiency-savingthrows dndbox">

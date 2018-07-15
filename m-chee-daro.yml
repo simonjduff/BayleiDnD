@@ -39,9 +39,12 @@ Traits:
   - Feline Agility
   - Cat's claws
   - Cat's talent
+Inspiration: 0
+Proficiency:
+  Bonus:
+    - Reason: Rogue Level 1
+      Value: +2
 Bonuses:
-  Level:
-    Proficiency: +2
   Racial:
     DEX: +2
     CHA: +1

@@ -29,8 +29,8 @@ class App extends Component {
             <Stats Stats={this.state.character.RawStats} />
           </div>
           <div className="column">
-            <Inspiration />
-            <Proficiency />
+            <Inspiration Inspiration={this.state.character.Inspiration}/>
+            <Proficiency Proficiency={this.state.character.Proficiency}/>
           </div>
         </div>
       </div>
