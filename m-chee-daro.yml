@@ -44,10 +44,6 @@ Proficiency:
   Bonus:
     - Reason: Rogue Level 1
       Value: +2
-Bonuses:
-  Racial:
-    DEX: +2
-    CHA: +1
 Proficiencies:
   Racial:
     - Perception
@@ -75,7 +71,7 @@ RawStats:
   - Name: STR
     Value: 13
   - Name: DEX
-    Value: 17
+    Value: 19
   - Name: CON
     Value: 14
   - Name: INT
@@ -83,7 +79,7 @@ RawStats:
   - Name: WIS
     Value: 12
   - Name: CHA
-    Value: 15
+    Value: 16
 SavingThrows:
   Class:
     - DEX
