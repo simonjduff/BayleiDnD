@@ -93,16 +93,12 @@ BackStory:
   Over the years M'Chee-daro has come to love the wizard as a second father.
   M'Chee-daro has been requested to join the journey to the continent, ostensibly as an adventurer, but also in search of a magical item, long since lost, that was referenced in an old tome.
 Background:
-  Name: Apprentice
-  PersonalityTrait: Boredom is the worst thing there is. Sitting alone, with nothing but your own thoughts. No way!
-  Ideal: Acquisition of knowledge or tools
-  Bond: Love for the wizard
-  Flaw: Strong tendency towards chaos muppetry when bored
-  Feature: 
-    Name: Use Magic Device
-    Detail: Ignore class, race, and level requirements on magic items
-  Equipment:
-    - Component Pouch
+  Name: Criminal
+  PersonalityTrait: I got into crime out of boredom, and that hasn't changed. Boredom + me = chaos.
+  Ideal: Acquisition. Whether it be items, artefacts, or knowledge. More is better.
+  Bond: I owe the wizard for my life. Also, he's giving me the training and skills to get more stuff.
+  Flaw: I'm petty. I will exact petty revenge for perceived slights.
+  Feature: Criminal Contact.
 Feat: 
   Name: Keen Mind
   Bonus: INT + 1
