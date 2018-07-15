@@ -4,7 +4,7 @@ import './App.css';
 import Character from './components/character';
 import Stats from './components/stats';
 import Inspiration from './components/inspiration';
-import ProficiencyBonus from './components/proficiencybonus';
+import Proficiency from './components/proficiency';
 
 class App extends Component {
   render() {
@@ -24,7 +24,7 @@ class App extends Component {
           </div>
           <div className="column">
             <Inspiration />
-            <ProficiencyBonus />
+            <Proficiency />
           </div>
         </div>
       </div>

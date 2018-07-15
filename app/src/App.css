@@ -71,6 +71,13 @@
 .stats-container{
   clear:left;
   width:4em;
+  font-size:1.1em;
+}
+
+.stat-container{
+  margin-top:2em;
+  margin-bottom:2em;
+  border:solid black 2px;
 }
 
 .inspiration-value, .proficiencybonus-value{
@@ -92,4 +99,9 @@
 
 .column-left{
   clear:left;
+}
+
+.proficiency-value{
+  width:2em;
+  float:left;
 }
