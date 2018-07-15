@@ -26,3 +26,32 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.dndbox{
+  border:solid 1px black;
+  position:relative;
+  float:left;
+}
+
+.container{
+  border:1px solid red;
+  width:80%;
+  margin:0 auto;
+}
+
+.character-box{
+  position:relative;
+}
+
+.character-label{
+  font-size:0.7em;
+  border-top:1px dotted black;
+}
+
+.character-container{
+  position:relative;
+  float:left;
+  padding-left:1em;
+  padding-right:1em;
+  width:10em;
+}
