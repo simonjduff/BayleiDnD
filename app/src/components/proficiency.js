@@ -7,6 +7,19 @@ export default class Proficiency extends React.Component{
             .Bonus
             .map(v => v.Value)
             .reduce((acc,v) => acc + v);
+        const tick = String.fromCharCode(0x2713);
+        const nbsp = String.fromCharCode(0xa0);
+        const stats = ['STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA'];
+        const myStats = this.props.Proficiency.SavingThrows.map(s => s.Name);
+        const selectedStats = stats.map(s => 
+                ({"Name": s, "Tick": myStats.includes(s) ? tick : nbsp})
+            ).map(s => 
+                <div key={s.Name}>
+                    <div className="proficiency-value">{s.Tick}</div>
+                    <span className="proficiency-label">{s.Name}</span>
+                </div>
+            );
+
         return(
             <div className="proficiencybonus-container">
                 <div className="dndbox">
@@ -14,30 +27,7 @@ export default class Proficiency extends React.Component{
                     <span className="proficiencybonus-label">Proficiency Bonus</span>
                 </div>
                 <div className="proficiency-savingthrows dndbox">
-                    <div>
-                        <div className="proficiency-value">&nbsp;</div>
-                        <span className="proficiency-label">STR</span>
-                    </div>
-                    <div>
-                        <span className="proficiency-value">&#x2713;</span>
-                        <span className="proficiency-label">DEX</span>
-                    </div>
-                    <div>
-                        <span className="proficiency-value">&nbsp;</span>
-                        <span className="proficiency-label">CON</span>
-                    </div>
-                    <div>
-                        <span className="proficiency-value">&#x2713;</span>
-                        <span className="proficiency-label">INT</span>
-                    </div>
-                    <div>
-                        <span className="proficiency-value">&nbsp;</span>
-                        <span className="proficiency-label">WIS</span>
-                    </div>
-                    <div>
-                        <span className="proficiency-value">&nbsp;</span>
-                        <span className="proficiency-label">CHA</span>
-                    </div>
+                    {selectedStats}
                 </div>
                 <div className="proficiency-skills dndbox">
                     <div>

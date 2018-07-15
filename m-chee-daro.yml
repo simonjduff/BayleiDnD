@@ -40,33 +40,43 @@ Traits:
   - Cat's claws
   - Cat's talent
 Inspiration: 0
-Proficiency:
+Proficiencies:
   Bonus:
     - Reason: Rogue Level 1
       Value: +2
-Proficiencies:
-  Racial:
-    - Perception
-    - Stealth
-  Class:
-    Amour:
-      - Light
-    Weapons:
-      - Simple
-      - Hand crossbows
-      - Longswords
-      - Rapiers
-      - Shortswords
-    Tools:
-      - Thieves' Tools
-    Skills:
-      - Sleight of hand
-      - Stealth
-      - Investigation
-      - Deception
-    Expertise:
-      - Sleight of hand
-      - Thieves' Tools
+  Amour:
+    - Name: Light
+      Reason: Class
+  Weapons:
+    - Name: Simple
+      Reason: Class
+    - Name: Hand crossbows
+      Reason: Class
+    - Name: Longswords
+      Reason: Class
+    - Name: Rapiers
+      Reason: Class
+    - Name: Shortswords
+      Reason: Class
+  Tools:
+    - Name: Thieves' Tools (Expert)
+      Reason: Class
+  Skills:
+    - Name: Sleight of hand (Expert)
+      Reason: Class
+    - Name: Stealth
+      Reason: Race, Class
+    - Name: Investigation
+      Reason: Class
+    - Name: Deception
+      Reason: Class
+    - Name: Perception
+      Reason: Race
+  SavingThrows:
+    - Name: DEX
+      Reason: Class
+    - Name: INT
+      Reason: Class
 RawStats:
   - Name: STR
     Value: 13
@@ -80,10 +90,6 @@ RawStats:
     Value: 12
   - Name: CHA
     Value: 16
-SavingThrows:
-  Class:
-    - DEX
-    - INT
 Equipment:
   - Rapier
   - Shortbow

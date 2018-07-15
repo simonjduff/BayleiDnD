@@ -30,7 +30,7 @@ class App extends Component {
           </div>
           <div className="column">
             <Inspiration Inspiration={this.state.character.Inspiration}/>
-            <Proficiency Proficiency={this.state.character.Proficiency}/>
+            <Proficiency Proficiency={this.state.character.Proficiencies}/>
           </div>
         </div>
       </div>
