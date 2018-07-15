@@ -72,6 +72,7 @@ Equipment:
   - Dagger x 2
   - Thieves' Tools
   - Burglar's pack
+  - Component pouch
 Attacks:
   - Sneak attack
     Bonus: 1d6
@@ -85,19 +86,20 @@ Attacks:
       - Unarmed
 BackStory:
   From a middle-class background, M'Chee-daro fell in with a bad crowd, and at the age of 8 started stealing for amusement.
-  One fateful night, he snuck into a house, seeking something interesting to take. He found a <something magic>, and activated it.
-  Unfortunately, the owner of the house was an elven wizard, and the <item> was protected by an alarm spell.
-  The wizard returned home, confronting our cat.
-  The wizard realized quickly that the cat had activated the artefact, suggesting latent magical (as well as present larcenous) talent.
+  One fateful night, he snuck into a house, seeking something interesting to take. He discovered a black cube in a dresser drawer, and when he picked it up, swiwling colours manifested on its surfaces.
+  Unfortunately, the owner of the house was an elven wizard, and the cube was protected by an alarm spell.
+  With a flash of light, the wizard teleported into the room, cast Hold Person, and M'Chee-daro was captured.
+  The wizard realized quickly that the cat had activated the cube, suggesting latent magical (as well as obvious larcenous) talent.
   They formed a pact. The wizard would train the cat in magical arts, and pay a stipend for his upkeep, for which M'Chee-daro would 'acquire' other artefacts as directed by the wizard.
   Over the years M'Chee-daro has come to love the wizard as a second father.
-  M'Chee-daro has been requested to join the journey to the continent, ostensibly as an adventurer, but also in search of a magical item, long since lost, that was referenced in an old tome.
+  The wizard discovered an ancient tome, rotting in a backstreet bookshop, that referenced an ancient artefact, lost since the closure of travel to Kinnic.
+  M'Chee-daro has been requested to join the journey to the continent, ostensibly as an adventurer, but primarily in search of this artefact.
 Background:
   Name: Criminal
   PersonalityTrait: I got into crime out of boredom, and that hasn't changed. Boredom + me = chaos.
   Ideal: Acquisition. Whether it be items, artefacts, or knowledge. More is better.
   Bond: I owe the wizard for my life. Also, he's giving me the training and skills to get more stuff.
-  Flaw: I'm petty. I will exact petty revenge for perceived slights.
+  Flaw: I'm spiteful. I will exact petty revenge for perceived slights.
   Feature: Criminal Contact.
 Feat: 
   Name: Keen Mind
