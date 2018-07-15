@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Character from './components/character';
+import Stats from './components/stats';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
         </p>
         <div className="container">
           <Character />
+          <Stats />
         </div>
       </div>
     );

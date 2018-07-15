@@ -34,13 +34,13 @@
 }
 
 .container{
-  border:1px solid red;
   width:80%;
   margin:0 auto;
 }
 
 .character-box{
   position:relative;
+  height:5em;
 }
 
 .character-label{
@@ -49,9 +49,27 @@
 }
 
 .character-container{
-  position:relative;
   float:left;
   padding-left:1em;
   padding-right:1em;
   width:10em;
+}
+
+.character-name{
+  height:4em;
+  width:30%;
+  padding-top:1em;
+}
+
+.character-name .character-value {
+  font-size:1.2em;
+}
+
+.character-name .character-label {
+  font-size:0.9em;
+}
+
+.stats-container{
+  clear:left;
+  width:4em;
 }
