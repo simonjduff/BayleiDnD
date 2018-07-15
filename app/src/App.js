@@ -5,8 +5,23 @@ import Character from './components/character';
 import Stats from './components/stats';
 import Inspiration from './components/inspiration';
 import Proficiency from './components/proficiency';
+import char from './m-chee-daro.json';
 
 class App extends Component {
+  componentDidMount(){
+    // return fetch('m-chee-daro.json')
+    //   .then(d => {
+    //     console.log(`Data ${JSON.stringify(d)}`);
+    //     return d;
+    //   })
+    //   .then(response => response.json())
+    //   .then((json) => {
+    //     this.setState({character: json});
+    //   })
+    //   .catch(e => console.log(e));
+    console.log(JSON.stringify(char));
+  }
+
   render() {
     return (
       <div className="App">
