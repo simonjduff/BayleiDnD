@@ -158,7 +158,6 @@ BackStory: >
     but primarily in search of this artefact.
 Feat:
   Name: Keen Mind
-  Bonus: INT + 1
   Skills:
     - Know where North is
     - Know hours to sunset/sunrise
