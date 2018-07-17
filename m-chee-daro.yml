@@ -34,11 +34,21 @@ Body:
   Sex: Male
   Height: 6'4
   Weight: 70kg
-Traits:
-  - Darkvision
-  - Feline Agility
-  - Cat's claws
-  - Cat's talent
+Abilities:
+  - Name: Darkvision
+    Bonus: 60ft Dim as if bright light, Dark as if dim. Grey only in dark.
+  - Name: Feline Agility
+    Bonus: x2 speed until end of turn. Reuse only after not moving for 1 turn.
+  - Name: Sneak attack
+    Bonus: 1d6
+    Limitation:
+      - Once per turn.
+      - Finesse or ranged.
+      - Advantage on attack roll or another enemy within 5 ft of target
+  - Name: Cat's claws
+    Bonus: Slashing 1d6 + STR Modifier.
+    Limitation:
+      - Unarmed
 Inspiration: 0
 Proficiencies:
   Bonus:
@@ -104,17 +114,6 @@ Equipment:
   - Thieves' Tools
   - Burglar's pack
   - Component pouch
-Attacks:
-  - Name: Sneak attack
-    Bonus: 1d6
-    Limitation:
-      - Once per turn.
-      - Finesse or ranged.
-      - Advantage on attack roll or another enemy within 5 ft of target
-  - Name: Cat's claws
-    Bonus: Slashing 1d6 + STR Modifier
-    Limitation:
-      - Unarmed
 BackStory: >
   From a middle-class background,
     M'Chee-daro fell in with a bad crowd,
