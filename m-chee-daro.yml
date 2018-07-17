@@ -4,15 +4,15 @@ Character:
   PlayerName: Bastett
   Class: Rogue (Arcane Trickster)
   Race: Tabaxi
-  Level: 1
+  Level: 2
   Alignment: Chaotic Neutral
-  ExperiencePoints: 0
+  ExperiencePoints: 300
   Languages:
     - Common
     - Thieves' Cant
     - Elvish
-  HitPoints: 10
-  HitDice: d8
+  HitPoints: 20
+  HitDice: 2d8
   Background:
     Name: Criminal
     PersonalityTrait: >
@@ -49,6 +49,9 @@ Abilities:
     Bonus: Slashing 1d6 + STR Modifier.
     Limitation:
       - Unarmed
+  - Name: Cunning Action
+    Bonus: Bonus action each combat turn.
+    Limitation: Can only Dash, Disengage, or Hide.
 Inspiration: 0
 Proficiencies:
   Bonus:
