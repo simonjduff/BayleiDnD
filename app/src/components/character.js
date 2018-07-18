@@ -1,44 +1,48 @@
 import React from 'react';
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
 
 export default class Character extends React.Component{
     render(){
         return (
-            <div>
-                <div className='character-name dndbox column'>
-                    <div className='character-value'>{this.props.Character.Name}</div>
-                    <div className='character-label'>Character</div>
-                </div>
-                <div className='character-box dndbox column'>
-                    <div>
-                        <div className='character-class character-container'>
-                            <div className='character-value'>{this.props.Character.Class}</div>
-                            <div className='character-label'>Class</div>
-                        </div>
-                        <div className='character-background character-container'>
-                            <div className='character-value'>{this.props.Character.Background.Name}</div>
-                            <div className='character-label'>Background</div>
-                        </div>
-                        <div className='character-player character-container'>
-                            <div className='character-value'>{this.props.Character.PlayerName}</div>
-                            <div className='character-label'>Player</div>
-                        </div>
-                    </div>
-                    <div>
-                        <div className='character-race character-container'>
-                            <div className='character-value'>{this.props.Character.Race}</div>
-                            <div className='character-label'>Race</div>
-                        </div>
-                        <div className='character-alignmnet character-container'>
-                            <div className='character-value'>{this.props.Character.Alignment}</div>
-                            <div className='character-label'>Alignment</div>
-                        </div>
-                        <div className='character-xp character-container'>
-                            <div className='character-value'>{this.props.Character.ExperiencePoints}</div>
-                            <div className='character-label'>XP</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Grid container>
+                <Grid item>
+                    <Paper item className='character-name dndbox'>
+                        <div className='character-value'>{this.props.Character.Name}</div>
+                        <div className='character-label'>Character</div>
+                    </Paper>
+                </Grid>
+                <Grid item lg={9}>
+                    <Paper item className='character-box dndbox'>
+                        <Grid container lg={12}>
+                            <Grid item className='character-class character-container' lg={4}>
+                                <div className='character-value'>{this.props.Character.Class}</div>
+                                <div className='character-label'>Class</div>
+                            </Grid>
+                            <Grid item lg={4}>
+                                <div className='character-value'>{this.props.Character.Background.Name}</div>
+                                <div className='character-label'>Background</div>
+                            </Grid>
+                            <Grid Item lg={4}>
+                                <div className='character-value'>{this.props.Character.PlayerName}</div>
+                                <div className='character-label'>Player</div>
+                            </Grid>
+                            <Grid item lg={4}>
+                                <div className='character-value'>{this.props.Character.Race}</div>
+                                <div className='character-label'>Race</div>
+                            </Grid>
+                            <Grid item lg={4}>
+                                <div className='character-value'>{this.props.Character.Alignment}</div>
+                                <div className='character-label'>Alignment</div>
+                            </Grid>
+                            <Grid item lg={4}>
+                                <div className='character-value'>{this.props.Character.ExperiencePoints}</div>
+                                <div className='character-label'>XP</div>
+                            </Grid>
+                        </Grid>
+                    </Paper>
+                </Grid>
+            </Grid>
         );
     }
 }

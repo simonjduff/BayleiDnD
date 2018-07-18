@@ -6,6 +6,8 @@ import Stats from './components/stats';
 import Inspiration from './components/inspiration';
 import Proficiency from './components/proficiency';
 import data from './m-chee-daro.json';
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
 
 class App extends Component {
   constructor(props){
@@ -24,14 +26,22 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <div className="container">
-          <Character Character={this.state.character.Character} />
-          <div className="column column-left">
-            <Stats Stats={this.state.character.RawStats} />
-          </div>
-          <div className="column">
-            <Inspiration Inspiration={this.state.character.Inspiration}/>
-            <Proficiency Proficiency={this.state.character.Proficiencies}/>
-          </div>
+          <Grid container spacing={24}>
+            <Grid item lg={12}>
+              <Character Character={this.state.character.Character} />
+            </Grid>
+          </Grid>
+          <Grid container spacing={8}>
+            <Grid item>
+              <Stats Stats={this.state.character.RawStats} />
+            </Grid>
+            <Grid item lg={4}>
+              <Paper>
+                <Inspiration Inspiration={this.state.character.Inspiration}/>
+                <Proficiency Proficiency={this.state.character.Proficiencies}/>
+              </Paper>
+            </Grid>
+          </Grid>
         </div>
       </div>
     );
