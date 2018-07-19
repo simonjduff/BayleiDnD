@@ -58,7 +58,7 @@
   font-size:0.8em;
 }
 
-.inspiration-container, .proficiencybonus-container{
+.inspiration-container, .proficiencybonus-container, .abilities-container{
   text-align:left;
 }
 
@@ -77,4 +77,16 @@
 .proficiency-value{
   width: 1em;
   float:left;
+}
+
+.ability-item{
+  padding-left:2em;
+}
+
+.abilities-container ul{
+  margin:0 0 0 0;
+}
+
+.abilities-container h4{
+  margin: 0 0 0 0;
 }

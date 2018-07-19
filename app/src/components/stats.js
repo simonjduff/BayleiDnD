@@ -7,7 +7,7 @@ export default class Stats extends React.Component{
 
     render(){
         const statContainers = this.props.Stats.map((stat, index) => 
-            <Grid container className="dndbox stats-container"s>
+            <Grid container className="dndbox stats-container">
                 <Grid item key={stat.Name}>
                     <Paper className="stat-container">
                         <div className="stat-value">{stat.Value} <span className='statModifier'>({this.statModifier(stat.Value)})</span></div>

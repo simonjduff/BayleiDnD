@@ -25,7 +25,7 @@ export default class Proficiency extends React.Component{
             <div key="{p.Name}">
                 <div className="proficiencyType">{p.Name}</div>
                 {p.Items.map(i => 
-                    <div className='proficiencyName' key="{i.Name}">{i.Name}</div>
+                    <div className='proficiencyName' key="{p.Name}{i.Name}">{i.Name}</div>
                 )}
             </div>
         );

@@ -7,6 +7,7 @@ import Inspiration from './components/inspiration';
 import Proficiency from './components/proficiency';
 import data from './m-chee-daro.json';
 import Grid from '@material-ui/core/Grid';
+import Abilities from './components/abilities';
 
 class App extends Component {
   constructor(props){
@@ -37,6 +38,9 @@ class App extends Component {
             <Grid item lg={4}>
                 <Inspiration Inspiration={this.state.character.Inspiration}/>
                 <Proficiency Proficiency={this.state.character.Proficiencies}/>
+            </Grid>
+            <Grid item lg={4}>
+              <Abilities Abilities={this.state.character.Abilities} />
             </Grid>
           </Grid>
         </div>

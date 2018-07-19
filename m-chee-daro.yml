@@ -40,20 +40,22 @@ Abilities:
     Bonus: 
       - 60ft Dim as if bright light, 
       - 60 ft Dark as if dim. 
-    Limitation: No colour vision in dark.
+    Limitation: 
+      - No colour vision in dark.
   - Name: Feline Agility
     Reason: Race
     Bonus: 
       - x2 speed until end of turn.
-    Limitation: Reuse only after not moving for 1 turn.
+    Limitation:
+      - Reuse only after not moving for 1 turn.
   - Name: Sneak attack
     Reason: Class
-    Bonus: 
+    Bonus:
       - 1d6
+      - Advantage on attack roll or another enemy within 5 ft of target
     Limitation:
       - Once per turn.
       - Finesse or ranged.
-      - Advantage on attack roll or another enemy within 5 ft of target
   - Name: Cat's claws
     Reason: Race
     Bonus: 
@@ -64,13 +66,14 @@ Abilities:
     Reason: Class
     Bonus: 
       - Bonus action each combat turn.
-    Limitation: Can only Dash, Disengage, or Hide.
+    Limitation:
+      - Can only Dash, Disengage, or Hide.
   - Name: Keen Mind
     Reason: Feat
     Bonus:
-    - Know where North is
-    - Know hours to sunset/sunrise
-    - Recall things seen/heard in last month
+      - Know where North is
+      - Know hours to sunset/sunrise
+      - Recall things seen/heard in last month
 Inspiration: 0
 Proficiencies:
   Bonus:

@@ -14,7 +14,7 @@ export default class Character extends React.Component{
                 </Grid>
                 <Grid item lg={9}>
                     <Paper item className='character-box dndbox'>
-                        <Grid container lg={12}>
+                        <Grid container>
                             <Grid item className='character-class character-container' lg={4}>
                                 <div className='character-value'>{this.props.Character.Class}</div>
                                 <div className='character-label'>Class</div>
@@ -23,7 +23,7 @@ export default class Character extends React.Component{
                                 <div className='character-value'>{this.props.Character.Background.Name}</div>
                                 <div className='character-label'>Background</div>
                             </Grid>
-                            <Grid Item lg={4}>
+                            <Grid item lg={4}>
                                 <div className='character-value'>{this.props.Character.PlayerName}</div>
                                 <div className='character-label'>Player</div>
                             </Grid>
