@@ -1,4 +1,5 @@
 import React from 'react';
+import Paper from '@material-ui/core/Paper';
 
 export default class Proficiency extends React.Component{
     render(){
@@ -31,16 +32,20 @@ export default class Proficiency extends React.Component{
 
         return(
             <div className="proficiencybonus-container">
-                <div className="dndbox">
+                <Paper className="dndbox">
                     <span className="proficiencybonus-value">{proficiencyBonus}</span>
                     <span className="proficiencybonus-label">Proficiency Bonus</span>
-                </div>
-                <div className="proficiency-savingthrows dndbox">
-                    {selectedStats}
-                </div>
-                <div className="proficiency-skills dndbox">
-                   {other}
-                </div>
+                </Paper>
+                <Paper>
+                    <h3>Proficiency</h3>
+                    <div className="proficiency-savingthrows dndbox">
+                        <div className="proficiencyType">Saving Throws</div>
+                        {selectedStats}
+                    </div>
+                    <div className="proficiency-skills dndbox">
+                    {other}
+                    </div>
+                </Paper>
             </div>
         );
     }

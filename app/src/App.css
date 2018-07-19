@@ -73,3 +73,8 @@
 .statModifier{
   font-size:0.7em;
 }
+
+.proficiency-value{
+  width: 1em;
+  float:left;
+}
