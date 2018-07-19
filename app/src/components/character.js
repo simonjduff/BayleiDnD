@@ -27,6 +27,8 @@ export default class Character extends React.Component{
                                 <div className='character-value'>{this.props.Character.PlayerName}</div>
                                 <div className='character-label'>Player</div>
                             </Grid>
+                        </Grid>
+                        <Grid container>
                             <Grid item lg={4}>
                                 <div className='character-value'>{this.props.Character.Race}</div>
                                 <div className='character-label'>Race</div>

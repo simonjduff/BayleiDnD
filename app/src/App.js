@@ -26,7 +26,7 @@ class App extends Component {
         </p>
         <div className="container">
           <Grid container spacing={24}>
-            <Grid item lg={12}>
+            <Grid item lg={8}>
               <Character Character={this.state.character.Character} />
             </Grid>
           </Grid>

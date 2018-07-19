@@ -36,22 +36,41 @@ Body:
   Weight: 70kg
 Abilities:
   - Name: Darkvision
-    Bonus: 60ft Dim as if bright light, Dark as if dim. Grey only in dark.
+    Reason: Race
+    Bonus: 
+      - 60ft Dim as if bright light, 
+      - 60 ft Dark as if dim. 
+    Limitation: No colour vision in dark.
   - Name: Feline Agility
-    Bonus: x2 speed until end of turn. Reuse only after not moving for 1 turn.
+    Reason: Race
+    Bonus: 
+      - x2 speed until end of turn.
+    Limitation: Reuse only after not moving for 1 turn.
   - Name: Sneak attack
-    Bonus: 1d6
+    Reason: Class
+    Bonus: 
+      - 1d6
     Limitation:
       - Once per turn.
       - Finesse or ranged.
       - Advantage on attack roll or another enemy within 5 ft of target
   - Name: Cat's claws
-    Bonus: Slashing 1d6 + STR Modifier.
+    Reason: Race
+    Bonus: 
+      - Slashing 1d6 + STR Modifier.
     Limitation:
       - Unarmed
   - Name: Cunning Action
-    Bonus: Bonus action each combat turn.
+    Reason: Class
+    Bonus: 
+      - Bonus action each combat turn.
     Limitation: Can only Dash, Disengage, or Hide.
+  - Name: Keen Mind
+    Reason: Feat
+    Bonus:
+    - Know where North is
+    - Know hours to sunset/sunrise
+    - Recall things seen/heard in last month
 Inspiration: 0
 Proficiencies:
   Bonus:
@@ -153,9 +172,3 @@ BackStory: >
   M'Chee-daro has been requested to join the journey to the continent,
     ostensibly as an adventurer,
     but primarily in search of this artefact.
-Feat:
-  Name: Keen Mind
-  Skills:
-    - Know where North is
-    - Know hours to sunset/sunrise
-    - Recall things seen/heard in last month
