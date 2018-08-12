@@ -4,9 +4,9 @@ Character:
   PlayerName: Bastett
   Class: Rogue (Arcane Trickster)
   Race: Tabaxi
-  Level: 2
+  Level: 3
   Alignment: Chaotic Neutral
-  ExperiencePoints: 300
+  ExperiencePoints:
   Languages:
     - Common
     - Thieves' Cant
@@ -14,8 +14,8 @@ Character:
     - Dwarvish
     - Undercommon
     - Gnomish
-  HitPoints: 20
-  HitDice: 2d8
+  HitPoints: 26
+  HitDice: 3d8
   Background:
     Name: Criminal
     PersonalityTrait: >
@@ -49,34 +49,34 @@ Armour:
 Abilities:
   - Name: Darkvision
     Reason: Race
-    Bonus: 
-      - 60ft Dim as if bright light, 
-      - 60 ft Dark as if dim. 
-    Limitation: 
+    Bonus:
+      - 60ft Dim as if bright light,
+      - 60 ft Dark as if dim.
+    Limitation:
       - No colour vision in dark.
   - Name: Feline Agility
     Reason: Race
-    Bonus: 
+    Bonus:
       - x2 speed until end of turn.
     Limitation:
       - Reuse only after not moving for 1 turn.
   - Name: Sneak attack
     Reason: Class
     Bonus:
-      - 1d6
+      - 2d6
       - Advantage on attack roll or another enemy within 5 ft of target
     Limitation:
       - Once per turn.
       - Finesse or ranged.
   - Name: Cat's claws
     Reason: Race
-    Bonus: 
+    Bonus:
       - Slashing 1d6 + STR Modifier.
     Limitation:
       - Unarmed
   - Name: Cunning Action
     Reason: Class
-    Bonus: 
+    Bonus:
       - Bonus action each combat turn.
     Limitation:
       - Can only Dash, Disengage, or Hide.
@@ -86,6 +86,21 @@ Abilities:
       - Know where North is
       - Know hours to sunset/sunrise
       - Recall things seen/heard in last month
+  - Name: Mage Hand Legerdemain
+    Reason: Class
+    Bonus:
+      - Mage Hand can be invisible
+      - >
+        You can stow one object the hand is holding in a
+          container worn or carried by another creature.
+      - >
+        You can retrieve an object in a
+          container worn or carried by another creature.
+      - You can use thieves’ tools to pick locks and disarm traps at range.
+      - >
+        Can avoid notice if succeeding a DEX (sleight of hand)
+        vs WIS (perception) check
+      - Can use Cunning Action to control the hand
 Inspiration: 0
 Proficiencies:
   Bonus:
@@ -158,6 +173,25 @@ Equipment:
   - Bottle of holy water
   - Bag of sapphires
   - Ring of shielding (once per day, add 5 AC, inpregnable to magic missile)
+Spells:
+    - Name: Find Familiar
+      Level: 1
+      Description: http://dnd5e.wikia.com/wiki/Find_Familiar
+    - Name: Colour Spray
+      Level: 1
+      Description: TBD
+    - Name: Disguise Self
+      Level: 1
+      Description: TBD
+    - Name: Mage Hand
+      Level: Cantrip
+      Description: TBD
+    - Name: Chill Touch
+      Level: Cantrip
+      Description: TBD
+    - Name: Minor Illusion
+      Level: Cantrip
+      Description: TBD
 BackStory: >
   From a middle-class background,
     M'Chee-daro fell in with a bad crowd,
@@ -187,10 +221,12 @@ BackStory: >
     rotting in a backstreet bookshop,
     that referenced an ancient artefact,
     lost since the closure of travel to Kinnic.
-  The artefact's name roughly translates to "Sovereign Orb". 
-    The last known location referenced in the tom is the floating city of the magical academies. 
-    Its appearance is presumably an orb with arcane runes on it. 
-    The translation suggested that the orb had the power to telepport large quantities of matter or people without a circle.
+  The artefact's name roughly translates to "Sovereign Orb".
+    The last known location referenced in the tomb
+      is the floating city of the magical academies.
+    Its appearance is presumably an orb with arcane runes on it.
+    The translation suggested that the orb had the power to
+      telepport large quantities of matter or people without a circle.
   M'Chee-daro has been requested to join the journey to the continent,
     ostensibly as an adventurer,
     but primarily in search of this artefact.

@@ -38,7 +38,7 @@ export default class Character extends React.Component{
                                 <div className='character-label'>Alignment</div>
                             </Grid>
                             <Grid item lg={4}>
-                                <div className='character-value'>{this.props.Character.ExperiencePoints}</div>
+                                <div className='character-value'>N/A</div>
                                 <div className='character-label'>XP</div>
                             </Grid>
                         </Grid>
