@@ -31,9 +31,9 @@ Character:
     Feature: Criminal Contact.
   Money:
     - Denomination: gold piece
-      Count: 26
+      Count: 32
     - Denomination: silver piece
-      Count: 27
+      Count: 28
 Body:
   Size: Medium
   Age: 15
@@ -155,6 +155,7 @@ Equipment:
   - Scroll of Magic Missile
   - Gold signet ring of Bahamut
   - Wand of smiles
+  - Bottle of holy water
 BackStory: >
   From a middle-class background,
     M'Chee-daro fell in with a bad crowd,
