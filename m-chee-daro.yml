@@ -31,7 +31,7 @@ Character:
     Feature: Criminal Contact.
   Money:
     - Denomination: gold piece
-      Count: 15
+      Count: 16
 Body:
   Size: Medium
   Age: 15
