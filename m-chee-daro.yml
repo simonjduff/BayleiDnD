@@ -29,6 +29,9 @@ Character:
       Also, he's giving me the training and skills to get more stuff.
     Flaw: I'm spiteful. I will exact petty revenge for perceived slights.
     Feature: Criminal Contact.
+  Money:
+    - Denomination: gold piece
+      Count: 15
 Body:
   Size: Medium
   Age: 15
