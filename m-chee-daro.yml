@@ -11,6 +11,9 @@ Character:
     - Common
     - Thieves' Cant
     - Elvish
+    - Dwarvish
+    - Undercommon
+    - Gnomish
   HitPoints: 20
   HitDice: 2d8
   Background:
@@ -34,6 +37,10 @@ Body:
   Sex: Male
   Height: 6'4
   Weight: 70kg
+Armour:
+  Name: Leather armour
+  Class: Light
+  AC: 11
 Abilities:
   - Name: Darkvision
     Reason: Race
@@ -89,7 +96,7 @@ Proficiencies:
       Items:
         - Name: Light
           Reason: Class
-    - Name: Weapons
+    - Name: WeaponsHit
       Items:
         - Name: Simple
           Reason: Class
