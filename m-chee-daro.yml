@@ -63,11 +63,11 @@ Abilities:
   - Name: Sneak attack
     Reason: Class
     Bonus:
-      - 2d6
-      - Advantage on attack roll or another enemy within 5 ft of target
+      - 2d6 damage
     Limitation:
       - Once per turn.
       - Finesse or ranged.
+      - Only when advantage on attack roll or another enemy within 5 ft of target
   - Name: Cat's claws
     Reason: Race
     Bonus:
