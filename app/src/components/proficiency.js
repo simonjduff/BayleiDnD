@@ -29,8 +29,21 @@ export default class Proficiency extends React.Component{
                     <div className="proficiencyType">{p.Name}</div>
                     {
                         p.Items.map(i => {
-                            var expert = i.Expert ? "expert" : "";
-                            return (<div className={`proficiencyName ${expert}`} key={`${p.Name}${i.Name}`}>{i.Name}</div>)
+                            const expert = i.Expert ? "expert" : "";
+                            const stat = this.props.Stats.filter(s => s.Name === i.Stat)[0] || false;
+
+                            if (stat){
+                                var multiplier = 1;
+                                if (expert){
+                                    multiplier = 2;
+                                }
+                                var statValue = `+${stat.Modifier + (this.props.Proficiency.Bonus[0].Value * multiplier)}`;
+                            }
+
+                            return (
+                                <div className={`proficiencyName ${expert}`} key={`${p.Name}${i.Name}`}>
+                                    {i.Name} <span>{statValue}</span>
+                                </div>)
                         })
                     }
                 </div>

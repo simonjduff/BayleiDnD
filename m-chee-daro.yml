@@ -133,17 +133,22 @@ Proficiencies:
         - Name: Thieves' Tools
           Reason: Class
           Expert: true
+          Stat: DEX
     - Name: Skills
       Items:
         - Name: Sleight of hand
           Reason: Class
+          Stat: DEX
           Expert: true
         - Name: Stealth
           Reason: Race, Class
+          Stat: DEX
         - Name: Investigation
           Reason: Class
+          Stat: INT
         - Name: Deception
           Reason: Class
+          Stat: CHA
         - Name: Perception
           Reason: Race
 RawStats:
