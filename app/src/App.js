@@ -13,7 +13,11 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {character:data};
-    // console.log(this.state["character"]);
+    this.state.character.RawStats =
+      this.state.character.RawStats.map(s => {
+        s.Modifier = Math.floor((s.Value - 10) / 2);
+        return s;
+    });
   }
 
   render() {
