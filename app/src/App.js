@@ -13,6 +13,7 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {character:data};
+    // console.log(this.state["character"]);
   }
 
   render() {
@@ -37,7 +38,7 @@ class App extends Component {
             </Grid>
             <Grid item lg={4}>
                 <Inspiration Inspiration={this.state.character.Inspiration}/>
-                <Proficiency Proficiency={this.state.character.Proficiencies}/>
+                <Proficiency Proficiency={this.state.character.Proficiencies} Stats={this.state.character.RawStats}/>
             </Grid>
             <Grid item lg={4}>
               <Abilities Abilities={this.state.character.Abilities} />

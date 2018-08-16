@@ -116,7 +116,7 @@ Proficiencies:
       Items:
         - Name: Light
           Reason: Class
-    - Name: WeaponsHit
+    - Name: Weapons
       Items:
         - Name: Simple
           Reason: Class

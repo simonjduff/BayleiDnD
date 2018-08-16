@@ -8,24 +8,22 @@ export default class Proficiency extends React.Component{
             .Bonus
             .map(v => v.Value)
             .reduce((acc,v) => acc + v);
-        const tick = String.fromCharCode(0x2713);
-        const nbsp = String.fromCharCode(0xa0);
         const stats = ['STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA'];
         const myStats = this.props.Proficiency.SavingThrows.map(s => s.Name);
         const selectedStats = stats.map(s => 
-                ({"Name": s, "Tick": myStats.includes(s) ? tick : nbsp})
+                ({"Name": s, "Proficient": myStats.includes(s) ? "proficient" : ""})
             ).map(s => 
-                <div key={s.Name}>
-                    <div className="proficiency-value">{s.Tick}</div>
-                    <span className="proficiency-label">{s.Name}</span>
+                <div key={s.Name} className="clearfix">
+                    <span className={`proficiency-label ${s.Proficient}`}>{s.Name}</span>
+                    <span className={`proficiency-value ${s.Proficient}`}>+ {this.props.Stats[s.Name]}</span>
                 </div>
             );
 
         const other = this.props.Proficiency.Other.map(p => 
-            <div key="{p.Name}">
+            <div key={p.Name}>
                 <div className="proficiencyType">{p.Name}</div>
                 {p.Items.map(i => 
-                    <div className='proficiencyName' key="{p.Name}{i.Name}">{i.Name}</div>
+                    <div className='proficiencyName' key={`${p.Name}${i.Name}`}>{i.Name}</div>
                 )}
             </div>
         );
@@ -37,7 +35,6 @@ export default class Proficiency extends React.Component{
                     <span className="proficiencybonus-label">Proficiency Bonus</span>
                 </Paper>
                 <Paper>
-                    <h3>Proficiency</h3>
                     <div className="proficiency-savingthrows dndbox">
                         <div className="proficiencyType">Saving Throws</div>
                         {selectedStats}

@@ -74,9 +74,9 @@
   font-size:0.7em;
 }
 
-.proficiency-value{
-  width: 1em;
+.proficiency-label{
   float:left;
+  width:3em;
 }
 
 .ability-item{
@@ -89,4 +89,14 @@
 
 .abilities-container h4{
   margin: 0 0 0 0;
+}
+
+.proficient{
+  font-weight:bold;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
