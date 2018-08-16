@@ -130,12 +130,14 @@ Proficiencies:
           Reason: Class
     - Name: Tools
       Items:
-        - Name: Thieves' Tools (Expert)
+        - Name: Thieves' Tools
           Reason: Class
+          Expert: true
     - Name: Skills
       Items:
-        - Name: Sleight of hand (Expert)
+        - Name: Sleight of hand
           Reason: Class
+          Expert: true
         - Name: Stealth
           Reason: Race, Class
         - Name: Investigation

@@ -11,7 +11,10 @@ export default class Proficiency extends React.Component{
         const stats = ['STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA'];
         const myStats = this.props.Proficiency.SavingThrows.map(s => s.Name);
         const selectedStats = stats.map(s => 
-                ({"Name": s, "Proficient": myStats.includes(s)})
+                ({
+                    Name: s, 
+                    Proficient: myStats.includes(s),
+                })
             ).map(s => 
                 <div key={s.Name} className="clearfix">
                     <span className={`proficiency-label ${s.Proficient ? "proficient" : ""}`}>{s.Name}</span>
@@ -21,13 +24,16 @@ export default class Proficiency extends React.Component{
                 </div>
             );
 
-        const other = this.props.Proficiency.Other.map(p => 
-            <div key={p.Name}>
-                <div className="proficiencyType">{p.Name}</div>
-                {p.Items.map(i => 
-                    <div className='proficiencyName' key={`${p.Name}${i.Name}`}>{i.Name}</div>
-                )}
-            </div>
+        const other = this.props.Proficiency.Other.map(p =>
+                <div key={p.Name}>
+                    <div className="proficiencyType">{p.Name}</div>
+                    {
+                        p.Items.map(i => {
+                            var expert = i.Expert ? "expert" : "";
+                            return (<div className={`proficiencyName ${expert}`} key={`${p.Name}${i.Name}`}>{i.Name}</div>)
+                        })
+                    }
+                </div>
         );
 
         return(
