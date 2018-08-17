@@ -66,10 +66,6 @@
   font-weight:bold;
 }
 
-.proficiencyName{
-  padding-left:1em;
-}
-
 .statModifier{
   font-size:0.7em;
 }
@@ -96,8 +92,11 @@
 }
 
 .proficiencyName.expert{
-  font-weight:bold;
   text-decoration: underline;
+}
+
+.proficiencyName.proficient{
+  font-weight:bold;
 }
 
 .clearfix::after {

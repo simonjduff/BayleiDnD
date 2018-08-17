@@ -1,5 +1,6 @@
 import React from 'react';
 import Paper from '@material-ui/core/Paper';
+import ProficiencySkills from './proficiency_skills';
 
 export default class Proficiency extends React.Component{
     render(){
@@ -24,31 +25,6 @@ export default class Proficiency extends React.Component{
                 </div>
             );
 
-        const other = this.props.Proficiency.Other.map(p =>
-                <div key={p.Name}>
-                    <div className="proficiencyType">{p.Name}</div>
-                    {
-                        p.Items.map(i => {
-                            const expert = i.Expert ? "expert" : "";
-                            const stat = this.props.Stats.filter(s => s.Name === i.Stat)[0] || false;
-
-                            if (stat){
-                                var multiplier = 1;
-                                if (expert){
-                                    multiplier = 2;
-                                }
-                                var statValue = `+${stat.Modifier + (this.props.Proficiency.Bonus[0].Value * multiplier)}`;
-                            }
-
-                            return (
-                                <div className={`proficiencyName ${expert}`} key={`${p.Name}${i.Name}`}>
-                                    {i.Name} <span>{statValue}</span>
-                                </div>)
-                        })
-                    }
-                </div>
-        );
-
         return(
             <div className="proficiencybonus-container">
                 <Paper className="dndbox">
@@ -60,9 +36,10 @@ export default class Proficiency extends React.Component{
                         <div className="proficiencyType">Saving Throws</div>
                         {selectedStats}
                     </div>
-                    <div className="proficiency-skills dndbox">
-                    {other}
-                    </div>
+
+                    <ProficiencySkills 
+                        Proficiency={this.props.Proficiency}
+                        Stats={this.props.Stats} />
                 </Paper>
             </div>
         );
