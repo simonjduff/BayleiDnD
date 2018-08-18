@@ -28,7 +28,7 @@ export default class Proficiency extends React.Component{
         return(
             <div className="proficiencybonus-container">
                 <Paper className="dndbox">
-                    <span className="proficiencybonus-value">{proficiencyBonus}</span>
+                    <span className="proficiencybonus-value">+{proficiencyBonus}</span>
                     <span className="proficiencybonus-label">Proficiency Bonus</span>
                 </Paper>
                 <Paper>

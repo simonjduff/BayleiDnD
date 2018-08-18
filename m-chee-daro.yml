@@ -15,7 +15,7 @@ Character:
     - Undercommon
     - Gnomish
   HitPoints: 26
-  HitDice: 3d8
+  HitDicePerLevel: d8
   Background:
     Name: Criminal
     PersonalityTrait: >
@@ -105,7 +105,7 @@ Inspiration: 0
 Proficiencies:
   Bonus:
     - Reason: Rogue Level 1
-      Value: +2
+      Value: 2
   SavingThrows:
     - Name: DEX
       Reason: Class
@@ -118,7 +118,7 @@ Proficiencies:
           Reason: Class
     - Name: Weapons
       Items:
-        - Name: Simple
+        - Name: Simple Weapons
           Reason: Class
         - Name: Hand crossbows
           Reason: Class
@@ -160,20 +160,82 @@ RawStats:
   - Name: CHA
     Value: 16
 Equipment:
-  - Rapier
-  - Shortbow
-  - Arrow x 24
-  - Leather armour
-  - Dagger x 2
-  - Thieves' Tools
-  - Burglar's pack
-  - Component pouch
-  - Ancient wine
-  - Scroll of Magic Missile
-  - Wand of smiles
-  - Bottle of holy water
-  - Bag of sapphires
-  - Ring of shielding (once per day, add 5 AC, inpregnable to magic missile)
+  - Name: Rapier
+    Type: Weapon
+    Properties:
+      - Finesse
+    Proficiency:
+      - Rapiers
+      - Martial Weapons
+    Damage: 1d8
+    DamageType: Piercing
+  - Name: Shortbow
+    Type: Weapon
+    Properties:
+      - Ammunition
+      - Two-Handed
+      - Range
+    Proficiency:
+      - Simple Weapons
+    Range:
+      Normal: 80
+      Long: 320
+    Damage: 1d6
+    DamageType: Piercing
+  - Name: Arrow
+    Type: Ammunition
+    Count: 24
+  - Name: Leather armour
+    Type: Armour
+    Class: Light
+    AC: 11
+  - Name: Dagger
+    Type: Weapon
+    Properties:
+      - Finesse
+      - Light
+      - Thrown
+    Range:
+      Normal: 20
+      Long: 60
+    Proficiency:
+      - Simple Weapons
+    Damage: 1d4
+    DamageType: Piercing
+  - Name: Dagger (Offhand)
+    Type: Weapon
+    Properties:
+      - Finesse
+      - Light
+      - Thrown
+      - Offhand
+    Range:
+      Normal: 20
+      Long: 60
+    Proficiency:
+      - Simple Weapons
+    Damage: 1d4
+    DamageType: Piercing
+  - Name: Thieves' Tools
+    Type: Tools
+  - Name: Burglar's pack
+    Type: Pack
+  - Name: Component pouch
+    Type: Misc
+  - Name: Ancient wine
+    Type: Misc
+  - Name: Scroll of Magic Missile
+    Type: Scroll
+  - Name: Wand of smiles
+    Type: Magical
+    Effect: TBD
+  - Name Bottle of holy water
+    Type: Misc
+  - Name: Bag of sapphires
+    Type: Misc
+  - Name: Ring of shielding
+    Type: Magical
+    Effect: Cast Shield once per long rest
 Spells:
     - Name: Find Familiar
       Level: 1

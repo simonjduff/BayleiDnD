@@ -5,20 +5,18 @@ import Paper from '@material-ui/core/Paper';
 export default class Stats extends React.Component{
     render(){
         const statContainers = this.props.Stats.map((stat, index) => 
-            <Grid container className="dndbox stats-container" key={stat.Name}>
-                <Grid item>
+                <Grid item lg={12} key={stat.Name}>
                     <Paper className="stat-container">
                         <div className="stat-value">{stat.Value} <span className='statModifier'>({stat.Modifier})</span></div>
                         <div className="stat-label">{stat.Name}</div>
                     </Paper>
-                </Grid>
-            </Grid>
+                </Grid>            
         );
 
         return (
-            <div>
+            <Grid container className="dndbox stats-container">
                 {statContainers}
-            </div>
+            </Grid>
         );
     }
 }

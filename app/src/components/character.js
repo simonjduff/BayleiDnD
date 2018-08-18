@@ -6,7 +6,7 @@ export default class Character extends React.Component{
     render(){
         return (
             <Grid container>
-                <Grid item>
+                <Grid item lg={3}>
                     <Paper className='character-name dndbox'>
                         <div className='character-value'>{this.props.Character.Name}</div>
                         <div className='character-label'>Character</div>

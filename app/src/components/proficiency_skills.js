@@ -15,7 +15,6 @@ export default class ProficiencySkills extends React.Component{
         const skillsHtml = skills.map(p => {
             const expert = (proficiencies[p.Name] || {}).Expert ? "expert" : "";
             const proficient = proficiencies[p.Name] ? "proficient" : "";
-            console.log(`${p.Name} ${JSON.stringify(proficiencies[p.Name])}`);
             const stat = this.props.Stats.filter(s => s.Name === p.Stat)[0];
 
             if (!stat){
