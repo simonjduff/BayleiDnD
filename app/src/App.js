@@ -29,17 +29,17 @@ class App extends Component {
       <div className="App">
         <div className="container">
           <Grid container spacing={24}>
-            <Grid item lg={12}>
+            <Grid item xs={12} lg={12}>
               <Character Character={this.state.character.Character} />
             </Grid>
-            <Grid item lg={1}>
+            <Grid item xs={1} lg={1}>
               <Stats Stats={this.state.character.RawStats} />
             </Grid>
-            <Grid item lg={4}>
+            <Grid item xs={4} lg={4}>
                 <Inspiration Inspiration={this.state.character.Inspiration}/>
                 <Proficiency Proficiency={this.state.character.Proficiencies} Stats={this.state.character.RawStats}/>
             </Grid>
-            <Grid item lg={3}>
+            <Grid item xs={3} lg={3}>
               <Grid container spacing={24}>
                 <Grid item lg={12}>
                   <Physical Character={this.state.character}/>
