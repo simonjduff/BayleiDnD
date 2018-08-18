@@ -10,6 +10,7 @@ import Abilities from './components/abilities';
 import Physical from './components/physical';
 import Weapons from './components/weapons';
 import Equipment from './components/equipment';
+import Spells from './components/spells';
 
 class App extends Component {
   constructor(props){
@@ -52,8 +53,11 @@ class App extends Component {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item lg={4}>
+            <Grid item lg={6}>
               <Abilities Abilities={this.state.character.Abilities} />
+            </Grid>
+            <Grid item lg={6}>
+              <Spells Spells={this.state.character.Spells}/>
             </Grid>
           </Grid>
         </div>

@@ -265,24 +265,56 @@ Equipment:
   - Name: Waterskin
     Type: Misc
 Spells:
-    - Name: Find Familiar
-      Level: 1
-      Description: http://dnd5e.wikia.com/wiki/Find_Familiar
-    - Name: Charm Person
-      Level: 1
-      Description: TBD
-    - Name: Disguise Self
-      Level: 1
-      Description: TBD
-    - Name: Mage Hand
-      Level: Cantrip
-      Description: TBD
-    - Name: Chill Touch
-      Level: Cantrip
-      Description: TBD
-    - Name: Minor Illusion
-      Level: Cantrip
-      Description: TBD
+    DC: 8
+    List:
+      - Name: Find Familiar
+        Level: 1
+        Components: V S M
+        Materials:
+          - 10gp Charcoal (consumed)
+          - Incense
+          - Herbs
+        CastingTime: 1hr
+        Range: 1ft
+        Duration: Instantaneous
+        Source: PHB 240
+      - Name: Charm Person
+        Level: 1
+        Components: V S
+        CastingTime: 1 action
+        Range: 30ft
+        Duration: 1hr
+        Source: PHB 221
+      - Name: Disguise Self
+        Level: 1
+        Components: V S
+        CastingTime: 1 action
+        Range: Self
+        Duration: 1hr
+        Source: PHB 233
+      - Name: Mage Hand
+        Level: Cantrip
+        CastingTime: 1 action
+        Range: 30ft
+        Components: V S
+        Duration: 1 minute
+        Source: PHB 256
+      - Name: Chill Touch
+        Level: Cantrip
+        CastingTime: 1 action
+        Range: 120ft
+        Components: V S
+        Duration: 1 round
+        Source: PHB 221
+      - Name: Minor Illusion
+        Level: Cantrip
+        CastingTime: 1 action
+        Range: 30ft
+        Components: S M
+        Materials:
+          - Fleece
+        Duration: 1 minute
+        Source: PHB 260 
 BackStory: >
   From a middle-class background,
     M'Chee-daro fell in with a bad crowd,

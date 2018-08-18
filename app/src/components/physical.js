@@ -5,6 +5,11 @@ import Paper from '@material-ui/core/Paper';
 export default class Physical extends React.Component{
     render(){
         const dexModifier = this.props.Character.RawStats.filter(s => s.Name === 'DEX')[0].Modifier;
+        const spellSave = this.props.Character.Spells.DC +
+            this.props.Character.Proficiencies.Bonus[0].Value +
+            this.props.Character.GetModifier('INT');
+        const spellAttack = this.props.Character.Proficiencies.Bonus[0].Value +
+            this.props.Character.GetModifier('INT');
         return (
             <div>
                 <Paper lg={12}>
@@ -33,6 +38,14 @@ export default class Physical extends React.Component{
                             {this.props.Character.Character.Level}
                             {this.props.Character.Character.HitDicePerLevel}
                             <div className='stat-label'>Hit Dice</div>
+                        </Grid>
+                        <Grid item lg={6}>
+                            {spellSave}
+                            <div className='stat-label'>Spell Save DC</div>
+                        </Grid>
+                        <Grid item lg={6}>
+                            +{spellAttack}
+                            <div className='stat-label'>Spell Attack</div>
                         </Grid>
                     </Grid>
                 </Paper>
