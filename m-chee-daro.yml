@@ -218,8 +218,8 @@ Equipment:
     DamageType: Piercing
   - Name: Thieves' Tools
     Type: Tools
-  - Name: Burglar's pack
-    Type: Pack
+  - Name: Backpack
+    Type: Container
   - Name: Component pouch
     Type: Misc
   - Name: Ancient wine
@@ -229,13 +229,41 @@ Equipment:
   - Name: Wand of smiles
     Type: Magical
     Effect: TBD
-  - Name Bottle of holy water
+  - Name: Bottle of holy water
     Type: Misc
   - Name: Bag of sapphires
     Type: Misc
   - Name: Ring of shielding
     Type: Magical
     Effect: Cast Shield once per long rest
+  - Name: Ball Bearings
+    Type: Misc
+    Count: 1000
+  - Name: String (10ft)
+    Type: Misc
+  - Name: Bell
+    Type: Misc
+  - Name: Candles
+    Count: 5
+  - Name: Crowbar
+    Type: Misc
+  - Name: Hammer
+    Type: Misc
+  - Name: Pitons
+    Type: Misc
+    Count: 10
+  - Name: Hooden Lantern
+    Type: Misc
+  - Name: Flasks of Oil
+    Type: Misc
+    Count: 2
+  - Name: Day's Rations
+    Type: Misc
+    Count: 5
+  - Name: Tinderbox
+    Type: Misc
+  - Name: Waterskin
+    Type: Misc
 Spells:
     - Name: Find Familiar
       Level: 1
