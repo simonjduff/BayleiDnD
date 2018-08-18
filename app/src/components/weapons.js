@@ -23,12 +23,12 @@ export default class Weapons extends React.Component{
                                         : strBonus;
                         
                         const damageBonus = weapon.Properties.includes('Offhand') ? 0 : bonus;
-                        const damageBonusString = damageBonus == 0 ? "" : `+${damageBonus}`;
+                        const damageBonusString = damageBonus === 0 ? "" : `+${damageBonus}`;
 
                         const proficient = weapon.Proficiency.filter(p => weaponProficiencies.includes(p)).length > 0;
                         const attack = bonus + (proficient ? this.props.Character.Proficiencies.Bonus[0].Value : 0);
                         return (
-                        <tr>
+                        <tr key={weapon.Name}>
                             <td>{weapon.Name}</td>
                             <td>+{attack}</td>
                             <td>{weapon.Damage}{damageBonusString}</td>
