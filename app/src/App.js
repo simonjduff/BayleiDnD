@@ -9,6 +9,7 @@ import Grid from '@material-ui/core/Grid';
 import Abilities from './components/abilities';
 import Physical from './components/physical';
 import Weapons from './components/weapons';
+import Equipment from './components/equipment';
 
 class App extends Component {
   constructor(props){
@@ -45,6 +46,9 @@ class App extends Component {
                 </Grid>
                 <Grid item lg={12}>
                   <Weapons Character={this.state.character} />
+                </Grid>
+                <Grid item lg={12}>
+                  <Equipment Equipment={this.state.character.Equipment} />
                 </Grid>
               </Grid>
             </Grid>

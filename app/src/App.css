@@ -58,7 +58,10 @@
   font-size:0.8em;
 }
 
-.inspiration-container, .proficiencybonus-container, .abilities-container{
+.inspiration-container, 
+.proficiencybonus-container, 
+.abilities-container,
+.equipment-container{
   text-align:left;
 }
 

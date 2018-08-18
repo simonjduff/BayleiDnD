@@ -39,7 +39,7 @@ export default class Weapons extends React.Component{
 
         return (
             <Paper>
-                <Grid container>
+                <Grid container className='equipment-container'>
                     <table>
                         <thead>
                             <tr>
