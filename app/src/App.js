@@ -8,6 +8,7 @@ import Proficiency from './components/proficiency';
 import data from './m-chee-daro.json';
 import Grid from '@material-ui/core/Grid';
 import Abilities from './components/abilities';
+import Physical from './components/physical';
 
 class App extends Component {
   constructor(props){
@@ -23,28 +24,21 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
         <div className="container">
           <Grid container spacing={24}>
-            <Grid item lg={8}>
+            <Grid item lg={12}>
               <Character Character={this.state.character.Character} />
             </Grid>
           </Grid>
-          <Grid container spacing={8}>
-            <Grid item>
+          <Grid container spacing={24}>
+            <Grid item lg={0.5}>
               <Stats Stats={this.state.character.RawStats} />
             </Grid>
-            <Grid item lg={4}>
+            <Grid item lg={3}>
                 <Inspiration Inspiration={this.state.character.Inspiration}/>
                 <Proficiency Proficiency={this.state.character.Proficiencies} Stats={this.state.character.RawStats}/>
             </Grid>
-            <Grid item lg={4}>
+            <Grid item lg={3}>
               <Abilities Abilities={this.state.character.Abilities} />
             </Grid>
           </Grid>

@@ -39,6 +39,9 @@ export default class ProficiencySkills extends React.Component{
                     </div>
             );
         });
-        return (<div>{skillsHtml}</div>);
+        return (<div>
+                <h3>Skills</h3>
+                {skillsHtml}
+            </div>);
     }
 }

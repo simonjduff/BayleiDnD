@@ -33,7 +33,7 @@ export default class Proficiency extends React.Component{
                 </Paper>
                 <Paper>
                     <div className="proficiency-savingthrows dndbox">
-                        <div className="proficiencyType">Saving Throws</div>
+                        <h3>Saving Throws</h3>
                         {selectedStats}
                     </div>
 
