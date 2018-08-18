@@ -26,6 +26,7 @@ export default class Abilities extends React.Component{
 
         return (
             <Paper className='abilities-container'>
+                <h3>Abilities</h3>
                 {abilities}
             </Paper>
         );
