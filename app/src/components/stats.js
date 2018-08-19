@@ -7,14 +7,15 @@ export default class Stats extends React.Component{
         const statContainers = this.props.Stats.map((stat, index) => 
                 <Grid item lg={12} key={stat.Name}>
                     <Paper className="stat-container">
-                        <div className="stat-value">{stat.Value} <span className='statModifier'>({stat.Modifier})</span></div>
+                        <div className='stat-modifier'>(+{stat.Modifier})</div>
+                        <div className="stat-value">{stat.Value}</div>
                         <div className="stat-label">{stat.Name}</div>
                     </Paper>
                 </Grid>            
         );
 
         return (
-            <Grid container className="dndbox stats-container">
+            <Grid container spacing={24} className="dndbox stats-container">
                 {statContainers}
             </Grid>
         );

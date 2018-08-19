@@ -32,9 +32,18 @@
   margin-right:5em;
 }
 
-.character-label, .stat-label{
+.character-label {
   font-size:0.7em;
   border-top:1px dotted black;
+}
+
+.stat-value{
+  font-size:1.8em;
+}
+
+.stat-label{
+  border-top:1px dotted black;
+  font-size:0.8em;
 }
 
 .character-name{
@@ -67,10 +76,6 @@
 
 .proficiencyType{
   font-weight:bold;
-}
-
-.statModifier{
-  font-size:0.7em;
 }
 
 .proficiency-label{

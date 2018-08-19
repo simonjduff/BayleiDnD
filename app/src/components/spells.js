@@ -5,7 +5,8 @@ export default class Spells extends React.Component{
         const materials = (spell) => {
             var mats = false;
             if (spell.Materials){
-                mats = (spell.Materials || []).map(c => <li key={c}>{c}</li>);
+                mats = (spell.Materials || [])
+                    .map(c => <li key={c}>{c}</li>);
             }
 
             if (mats){
