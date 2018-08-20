@@ -50,13 +50,13 @@ class App extends Component {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item lg={4}>
+            <Grid item xs={4} lg={4}>
                   <Equipment Equipment={this.state.character.Equipment} />
                 </Grid>
-            <Grid item lg={6}>
+            <Grid item xs={6} lg={6}>
               <Abilities Abilities={this.state.character.Abilities} />
             </Grid>
-            <Grid item lg={6}>
+            <Grid item xs={6} lg={6}>
               <Spells Spells={this.state.character.Spells}/>
             </Grid>
           </Grid>
