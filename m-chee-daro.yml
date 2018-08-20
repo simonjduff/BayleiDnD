@@ -30,9 +30,9 @@ Character:
     Flaw: I'm spiteful. I will exact petty revenge for perceived slights.
     Feature: Criminal Contact.
   Money:
-    - Denomination: gold piece
+    - Denomination: gp
       Count: 32
-    - Denomination: silver piece
+    - Denomination: sp
       Count: 28
 Body:
   Size: Medium

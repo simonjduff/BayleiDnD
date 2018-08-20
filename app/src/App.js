@@ -11,6 +11,7 @@ import Physical from './components/physical';
 import Weapons from './components/weapons';
 import Equipment from './components/equipment';
 import Spells from './components/spells';
+import Gold from './components/gold';
 
 class App extends Component {
   constructor(props){
@@ -46,13 +47,16 @@ class App extends Component {
                   <Physical Character={this.state.character}/>
                 </Grid>
                 <Grid item lg={12}>
+                  <Gold Money={this.state.character.Character.Money} />
+                </Grid>
+                <Grid item lg={12}>
                   <Weapons Character={this.state.character} />
                 </Grid>
               </Grid>
             </Grid>
             <Grid item xs={4} lg={4}>
-                  <Equipment Equipment={this.state.character.Equipment} />
-                </Grid>
+              <Equipment Equipment={this.state.character.Equipment} />
+            </Grid>
             <Grid item xs={6} lg={6}>
               <Abilities Abilities={this.state.character.Abilities} />
             </Grid>
