@@ -19,19 +19,21 @@ export default class Spells extends React.Component{
             }
         };
 
-        const spells = this.props.Spells.List.map(s => {
-            return (
-                <div key={s.Name}>
-                    <h4>{s.Name}</h4>
-                    <div>Level {s.Level}</div>
-                    <div>Components: {s.Components}</div>
-                    <div>Casting Time: {s.CastingTime}</div>
-                    <div>Range: {s.Range}</div>
-                    <div>Duration: {s.Duration}</div>
-                    <div>Source: {s.Source}</div>
-                    {materials(s)}
-                </div>
-            );
+        const spells = this.props.Spells.List
+            .sort((a,b) => a.Name > b.Name)
+            .map(s => {
+                return (
+                    <div key={s.Name}>
+                        <h4>{s.Name}</h4>
+                        <div>Level {s.Level}</div>
+                        <div>Components: {s.Components}</div>
+                        <div>Casting Time: {s.CastingTime}</div>
+                        <div>Range: {s.Range}</div>
+                        <div>Duration: {s.Duration}</div>
+                        <div>Source: {s.Source}</div>
+                        {materials(s)}
+                    </div>
+                );
         });
 
         return (

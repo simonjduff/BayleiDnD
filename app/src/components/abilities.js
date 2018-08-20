@@ -22,7 +22,9 @@ export default class Abilities extends React.Component{
     }
 
     render(){
-        const abilities = this.props.Abilities.map(a => this.ability(a));
+        const abilities = this.props.Abilities
+            .sort((a,b) => a.Name > b.Name)
+            .map(a => this.ability(a));
 
         return (
             <Paper className='abilities-container'>
