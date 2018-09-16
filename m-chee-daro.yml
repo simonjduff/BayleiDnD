@@ -264,6 +264,8 @@ Equipment:
     Type: Misc
   - Name: Waterskin
     Type: Misc
+  - Name: Hempen rope (50 ft)
+    Type: Misc
 Spells:
     DC: 8
     List:
