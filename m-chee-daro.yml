@@ -31,7 +31,7 @@ Character:
     Feature: Criminal Contact.
   Money:
     - Denomination: gp
-      Count: 22
+      Count: 23
     - Denomination: sp
       Count: 28
 Body:
