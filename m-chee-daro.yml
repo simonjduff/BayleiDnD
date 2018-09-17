@@ -31,7 +31,7 @@ Character:
     Feature: Criminal Contact.
   Money:
     - Denomination: gp
-      Count: 32
+      Count: 22
     - Denomination: sp
       Count: 28
 Body:
@@ -222,8 +222,10 @@ Equipment:
     Type: Container
   - Name: Component pouch
     Type: Misc
-  - Name: Ancient wine
+  - Name: Herbs and Incense (10gc worth)
     Type: Misc
+  - Name: Postion of healing (common)
+    Type: Potion
   - Name: Scroll of Magic Missile
     Type: Scroll
   - Name: Wand of smiles
