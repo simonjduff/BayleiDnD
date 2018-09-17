@@ -268,6 +268,8 @@ Equipment:
     Type: Misc
   - Name: Hempen rope (50 ft)
     Type: Misc
+  - Name: Brass brazier
+    Type: Misc
 Spells:
     DC: 8
     List:
