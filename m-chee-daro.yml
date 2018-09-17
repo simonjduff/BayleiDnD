@@ -270,6 +270,8 @@ Equipment:
     Type: Misc
   - Name: Brass brazier
     Type: Misc
+  - Name: Scroll of Dragon's Breath (Radiant only)
+    Type: Scroll
 Spells:
     DC: 8
     List:
