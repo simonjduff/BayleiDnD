@@ -182,6 +182,15 @@ Equipment:
       Long: 320
     Damage: 1d6
     DamageType: Piercing
+  - Name: Dark Hind Sword
+    Type: Weapon
+    Properties:
+      - Longsword
+      - Attuned
+      - +1
+      - Heals necrotic damage dealt
+    Damage: 1d8 + 1d4
+    DamangeType: Slashing + Necrotic
   - Name: Arrow
     Type: Ammunition
     Count: 24
