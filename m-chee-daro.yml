@@ -4,7 +4,7 @@ Character:
   PlayerName: Bastett
   Class: Rogue (Arcane Trickster)
   Race: Tabaxi
-  Level: 3
+  Level: 4
   Alignment: Chaotic Neutral
   ExperiencePoints:
   Languages:
@@ -14,7 +14,7 @@ Character:
     - Dwarvish
     - Undercommon
     - Gnomish
-  HitPoints: 26
+  HitPoints: 33
   HitDicePerLevel: d8
   Background:
     Name: Criminal
@@ -154,11 +154,11 @@ RawStats:
   - Name: STR
     Value: 13
   - Name: DEX
-    Value: 19
+    Value: 20
   - Name: CON
     Value: 14
   - Name: INT
-    Value: 16
+    Value: 17
   - Name: WIS
     Value: 12
   - Name: CHA
@@ -316,13 +316,13 @@ Spells:
       Range: 1ft
       Duration: Instantaneous
       Source: PHB 240
-    - Name: Charm Person
+    - Name: Silent Image
       Level: 1
-      Components: V S
+      Components: V S M
       CastingTime: 1 action
-      Range: 30ft
-      Duration: 1hr
-      Source: PHB 221
+      Range: 60ft
+      Duration: 10 minutes (concentration)
+      Source: PHB 276
     - Name: Disguise Self
       Level: 1
       Components: V S
@@ -353,6 +353,13 @@ Spells:
         - Fleece
       Duration: 1 minute
       Source: PHB 260
+    - Name: Sleep
+      Level: 1
+      CastingTime: 1 action
+      Range: 90ft
+      Components: V S M
+      Source: PHB 276
+      Duration: 1 minute
 BackStory: >
   From a middle-class background,
     M'Chee-daro fell in with a bad crowd,
