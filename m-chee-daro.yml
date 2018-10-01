@@ -187,14 +187,17 @@ Equipment:
   - Name: Dark Hind Sword
     Type: Weapon
     Proficiency:
-      - Simple Weapons
+      - Martial Weapons
+      - Rapiers
     Properties:
-      - Longsword
+      - Finesse
+      - Rapier
       - Attuned
       - +1
       - Heals necrotic damage dealt
     Damage: 1d8 + 1d4
     DamangeType: Slashing + Necrotic
+    LiveKills: 3
   - Name: Arrow
     Type: Ammunition
     Count: 24
