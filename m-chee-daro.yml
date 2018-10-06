@@ -31,7 +31,7 @@ Character:
     Feature: Criminal Contact.
   Money:
     - Denomination: gp
-      Count: 36
+      Count: 336
     - Denomination: sp
       Count: 49
     - Denomination: cp
@@ -242,8 +242,6 @@ Equipment:
     Type: Misc
   - Name: Herbs and Incense (10gc worth)
     Type: Misc
-  - Name: Postion of healing (common)
-    Type: Potion
   - Name: Scroll of Magic Missile
     Type: Scroll
   - Name: Wand of smiles
@@ -296,6 +294,11 @@ Equipment:
     Type: Misc
   - Name: Small flask of oil
     Type: Misc
+  - Name: Scroll of Fireball
+    Type: Scroll
+  - Name: Circlet of blasting
+    Type: Magical
+    Effect: 3 attacks, each 2d6 fire, range spell attack
 Spells:
   DC: 8
   List:
