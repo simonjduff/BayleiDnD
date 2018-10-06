@@ -31,9 +31,11 @@ Character:
     Feature: Criminal Contact.
   Money:
     - Denomination: gp
-      Count: 23
+      Count: 36
     - Denomination: sp
-      Count: 28
+      Count: 49
+    - Denomination: cp
+      Count: 11
 Body:
   Size: Medium
   Age: 15
@@ -288,6 +290,10 @@ Equipment:
     Type: Misc
   - Name: Scroll of Dragon's Breath (Radiant only)
     Type: Scroll
+  - Name: Inquisition sigil
+    Type: Misc
+  - Name: Inquisition writ, in case
+    Type: Misc
 Spells:
   DC: 8
   List:
