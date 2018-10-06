@@ -294,6 +294,8 @@ Equipment:
     Type: Misc
   - Name: Inquisition writ, in case
     Type: Misc
+  - Name: Small flask of oil
+    Type: Misc
 Spells:
   DC: 8
   List:
