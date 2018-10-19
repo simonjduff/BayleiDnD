@@ -337,13 +337,12 @@ Spells:
       Components: V S
       Duration: 1 minute
       Source: PHB 256
-    - Name: Chill Touch
+    - Name: Prestidigitation
       Level: Cantrip
       CastingTime: 1 action
-      Range: 120ft
       Components: V S
-      Duration: 1 round
-      Source: PHB 221
+      Duration: 1 hour
+      Source: PHB 267
     - Name: Minor Illusion
       Level: Cantrip
       CastingTime: 1 action
