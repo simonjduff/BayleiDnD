@@ -299,6 +299,9 @@ Equipment:
   - Name: Circlet of blasting
     Type: Magical
     Effect: 3 attacks, each 2d6 fire, range spell attack
+  - Name: Fancy inks
+    Type: Misc
+    Value: 300gc
 Spells:
   DC: 8
   List:
